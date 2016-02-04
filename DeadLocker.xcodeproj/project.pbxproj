@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2234EF1C0D8BAF00850CA3 /* grenade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2234EE1C0D8BAF00850CA3 /* grenade.mp3 */; };
 		FA225DC81C0CAD500033A66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA225DC71C0CAD500033A66F /* AppDelegate.swift */; };
 		FA225DCA1C0CAD500033A66F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA225DC91C0CAD500033A66F /* ViewController.swift */; };
 		FA225DCD1C0CAD500033A66F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA225DCB1C0CAD500033A66F /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA225DC41C0CAD500033A66F /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2234EE1C0D8BAF00850CA3 /* grenade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = grenade.mp3; path = MineSweeper/Assets.xcassets/Sound.dataset/grenade.mp3; sourceTree = "<group>"; };
+		FA225DC41C0CAD500033A66F /* DeadLocker.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadLocker.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA225DC71C0CAD500033A66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA225DC91C0CAD500033A66F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA225DCC1C0CAD500033A66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		FA225DBB1C0CAD500033A66F = {
 			isa = PBXGroup;
 			children = (
+				FA2234EE1C0D8BAF00850CA3 /* grenade.mp3 */,
 				FA225DC61C0CAD500033A66F /* MineSweeper */,
 				FA225DC51C0CAD500033A66F /* Products */,
 			);
@@ -46,7 +49,7 @@
 		FA225DC51C0CAD500033A66F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA225DC41C0CAD500033A66F /* MineSweeper.app */,
+				FA225DC41C0CAD500033A66F /* DeadLocker.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA225DC31C0CAD500033A66F /* MineSweeper */ = {
+		FA225DC31C0CAD500033A66F /* DeadLocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA225DD61C0CAD500033A66F /* Build configuration list for PBXNativeTarget "MineSweeper" */;
+			buildConfigurationList = FA225DD61C0CAD500033A66F /* Build configuration list for PBXNativeTarget "DeadLocker" */;
 			buildPhases = (
 				FA225DC01C0CAD500033A66F /* Sources */,
 				FA225DC11C0CAD500033A66F /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MineSweeper;
+			name = DeadLocker;
 			productName = MineSweeper;
-			productReference = FA225DC41C0CAD500033A66F /* MineSweeper.app */;
+			productReference = FA225DC41C0CAD500033A66F /* DeadLocker.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA225DBF1C0CAD500033A66F /* Build configuration list for PBXProject "MineSweeper" */;
+			buildConfigurationList = FA225DBF1C0CAD500033A66F /* Build configuration list for PBXProject "DeadLocker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA225DC31C0CAD500033A66F /* MineSweeper */,
+				FA225DC31C0CAD500033A66F /* DeadLocker */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2234EF1C0D8BAF00850CA3 /* grenade.mp3 in Resources */,
 				FA225DD21C0CAD500033A66F /* LaunchScreen.storyboard in Resources */,
 				FA225DCF1C0CAD500033A66F /* Assets.xcassets in Resources */,
 				FA225DCD1C0CAD500033A66F /* Main.storyboard in Resources */,
@@ -250,10 +254,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MineSweeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.MoodSpace.MineSweeper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.MoodSpace.DeadLocker;
+				PRODUCT_NAME = DeadLocker.temp_caseinsensitive_rename;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -261,17 +267,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MineSweeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.MoodSpace.MineSweeper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.MoodSpace.DeadLocker;
+				PRODUCT_NAME = DeadLocker.temp_caseinsensitive_rename;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA225DBF1C0CAD500033A66F /* Build configuration list for PBXProject "MineSweeper" */ = {
+		FA225DBF1C0CAD500033A66F /* Build configuration list for PBXProject "DeadLocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA225DD41C0CAD500033A66F /* Debug */,
@@ -280,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA225DD61C0CAD500033A66F /* Build configuration list for PBXNativeTarget "MineSweeper" */ = {
+		FA225DD61C0CAD500033A66F /* Build configuration list for PBXNativeTarget "DeadLocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA225DD71C0CAD500033A66F /* Debug */,
 				FA225DD81C0CAD500033A66F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
